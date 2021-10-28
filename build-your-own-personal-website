@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>Hyerin Lee</title>
+  <style>
+    body {
+      text-align: center;
+      background: url("https://i.ibb.co/khDnZcK/2561408.jpg");
+      background-size: cover;
+      background-position: center;
+      color: black;
+      font-family: didot, serif;
+      f
+    }
+    p {
+      font-size: 22px;
+      color: #0092FE
+
+    }
+    input {
+      border: 5px solid #94E5FF;
+      font-family: didot, serif;
+      background-color:#FFFEB5
+      
+    }
+    input[type="submit"] {
+      background: #94E5FF;
+      color: black;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="name"]{
+      padding: 10px;
+      font-size: 18px;
+      width: 350px;
+      }
+    input[type="email"] {
+      padding: 10px;
+      font-size: 18px;
+      width: 350px;
+      }
+    input[type="explain"]{
+      padding:10px;
+      height:200px;
+      width: 500px;
+      font-size: 18px;
+      }
+    img{
+      height: 300px;
+      border: 5px solid pink;
+      border-color: #94E5FF;
+      }
+    h3{
+      color: #FFDC2F;
+      }
+    button{
+      padding: 5px;
+      font-family: didot, serif;
+      border: 0;
+      background-color: #FFFEB5
+      }
+  </style>
+</head>
+<body>
+  <img src="https://i.ibb.co/BKkVdBC/Hyerin-Lee.jpg" alt="Hyerin-Lee" border="0">
+  <p></p>
+    <a href='https://www.linkedin.com/in/hyerin-lee'><button>My LinkedIn</button></a>
+  <h2>Hello! I'm Hyerin, an aspiring software engineer. I would love to get to know you!</h2>
+  <h2>Here are a few things about me.</h2>
+  <p>Class of 2024 @ UCLA</p>
+  <p>Majoring in Mathematics of Computation</p>
+  <h3>Favorite color is yellow :)</h3>
+  <input type="name" placeholder="Your name">
+  <p></p>
+  <input type="email" placeholder="Your email" height=200>
+  <p></p>
+  <input type="explain" placeholder="What would you like me to know about you?">
+  <p></p>
+  <input type="submit">
+</body>
