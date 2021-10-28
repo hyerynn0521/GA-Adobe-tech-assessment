@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://i.ibb.co/NxwQttr/blog-background.jpg');
+      background-size: cover;
+      color: black;
+      font-family: Didot, serif;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      margin: 100px;
+    }
+    img[type="blog"] {
+      border: 7px solid;
+      width:200px;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: pink;
+
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: #FED800;
+      font-family: Didot, serif;
+      border-radius: 10px;
+    }
+    input{
+      padding: 10px;
+      width:400px;
+      border-radius: 5px;
+    }
+    button[type="comment"]{
+      padding: 10px;
+      background: pink;
+      border-radius: 5px;
+      }
+    button[type="like"]{
+      background: #90DAFF;
+      border-radius: 5px;
+      }
+    button[type="share"]{
+      margin: 0px 0px 0px 5px;
+      background: #90DAFF;
+      border-radius: 5px;
+      }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+        margin: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+      input{
+        width: 200px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="">
+    <h1>print("Hyerin's World");</h1>
+    <ul>
+      <li><a href="#">Verse of the Day</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">My daily life</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Verses of the Day 102721</h2>
+    <p>(Romans 10:17) So then faith comes by hearing, and hearing by the word of God.</p><p>(Ecclesiastes 3:11) He has made everything beautiful in its time. Also He has put eternity in their hearts, except that no one can find out the work that God does from beginning to end.</p><p>(Daniel 12:3) And those who turn many to righteousness Like the stars forever and ever.</p>
+    <button type="like">Like</button><button type="share">Share</button><p><p>
+    <input type="comment" placeholder="Write a comment..."></input><button type="comment">submit</button>
+  </article>
+  <p></p>
+  <article>
+    <h2>College Life</h2>
+    <p>So far, I'm really enjoying my life at UCLA. All my lectures are still online because of COVID, but hopefully by next quarter I can have in-person classes. I made some friends too, which is really exciting. Midterm week was nervewrecking so I'm really thankful that it passed. Oh wait... another midterm in 2 weeks... Definitely not looking forward to that.</p>
+    <button type="like">Like</button><button type="share">Share</button><p><input type="comment" placeholder="Write a comment..."></input><button type="comment">submit</button>
+  </article>
+   <p></p>
+  <article>
+    <h2>Laser Tag with my club DataRes!</h2>
+    <img type="blog" src="https://i.ibb.co/8gywNNC/Image-from-i-OS.jpg"></img>
+    <p>Today, my club had a social bonding activity which was laser tag. Basically you had to shoot at other people's guns until their life ran out. Our team (blue) won once but lost twice. It was probably because there were more guys on the other team. But still, it was so fun, and I got to meet more new people which was great! Extracurriculars are defnitely better in-person.</p>
+    <button type="like">Like</button><button type="share">Share</button><p><p><input type="comment" placeholder="Write a comment..."></input><button type="comment">submit</button>
+  </article>
+  <script>
+    $("button[type=comment]").on("click", function() {
+      alert("Your comment was saved!");
+    });
+    $("button[type=like]").on("click", function() {
+      alert("You liked this post!");
+    });
+    $("h2").on("mouseover", function() {
+      alert("Do you like this post? Click Like to like the post!");
+    });
+    $("button[type=share]").on("click", function() {
+      alert("This post has been shared!");
+    });
+  </script>
+</body>
